@@ -27,7 +27,7 @@ main {
   background-color: var(--white);
   border-radius: 1rem;
   padding: 1.5rem;
-  width: 350px;
+  width: 385px;
   box-shadow: 8px 8px 0 black;
   border: 1.5px solid black;
 }
@@ -56,6 +56,7 @@ article div {
 }
 
 article .date {
+  font-weight: 500;
   color: var(--black);
 }
 
@@ -64,7 +65,8 @@ article h1 {
   font-weight: 800;
 }
 
-article h1:hover {
+article h1:hover,
+article h1:active {
   cursor: pointer;
   color: var(--yellow);
 }
@@ -78,17 +80,17 @@ article p {
 .profile {
   display: flex;
   gap: 0.7rem;
-  margin-top: 1.3rem;
-  margin-bottom: 0.7rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .profile img {
   width: 32px;
 }
 
-.profile h4 {
+.profile h5 {
   color: var(--black);
-  margin-top: 5px;
+  margin-top: 8px;
   font-weight: 800;
 }
 
@@ -101,8 +103,9 @@ article p {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1024px) {
-  .card-blog {
-    width: 384px;
+@media (max-width: 420px) {
+  main {
+    width: 350px;
+    padding: 1rem;
   }
 }
